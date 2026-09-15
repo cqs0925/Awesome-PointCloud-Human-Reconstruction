@@ -20,9 +20,9 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 
 ### 2026
 
-**arXiv papers**
+**CVPR**
 
-- M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction [[arXiv](https://arxiv.org/abs/2512.12378)] [[project](https://fanjunqiao.github.io/M4Human-site/)]
+- M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction [[paper](https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html)] [[arXiv](https://arxiv.org/abs/2512.12378)] [[project](https://fanjunqiao.github.io/M4Human-site/)] [[code](https://github.com/FanJunqiao/M4Human)]
 
 ### 2025
 
