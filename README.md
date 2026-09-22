@@ -11,7 +11,7 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 
 ## Overview
 
-- [2026](#2026) — CVPR · Journal papers
+- [2026](#2026) — CVPR · ECCV · ICLR · SIGGRAPH Asia · Journal papers
 - [2025](#2025) — CVPR · ICCV · ICLR · WACV · BMVC · MM
 - [2024](#2024) — CVPR · ECCV
 - [2023](#2023) — CVPR · ICCV
@@ -20,7 +20,7 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 - [2020](#2020) — CVPR · ECCV · NeurIPS
 - [2019](#2019) — CVPR · ICCV · ICRA · Journal papers
 
-**Links:** `[Paper]` official PDF / proceedings · `[arXiv]` preprint · `[Project]` project page · `[Code]` source · `[DOI]` publisher DOI
+**Links:** `[Paper]` official PDF / proceedings · `[arXiv]` preprint · `[Project]` project page · `[Code]` source · `[DOI]` publisher DOI · `[OpenReview]` venue forum
 
 ## Papers
 
@@ -30,6 +30,19 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 
 - **M4Human**: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html) [arXiv](https://arxiv.org/abs/2512.12378) [Project](https://fanjunqiao.github.io/M4Human-site/) [Code](https://github.com/FanJunqiao/M4Human)
 - **UniSH**: Unifying Scene and Human Reconstruction in a Feed-Forward Pass [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Li_UniSH_Unifying_Scene_and_Human_Reconstruction_in_a_Feed-Forward_Pass_CVPR_2026_paper.html) [Project](https://murphylmf.github.io/UniSH/)
+
+**ECCV**
+
+- **ETCH-X**: Robustify Expressive Body Fitting to Clothed Humans with Composable Datasets [arXiv](https://arxiv.org/abs/2604.08548) [Project](https://xiaobenli00.github.io/ETCH-X) [Code](https://github.com/XiaobenLi00/ETCH-X)
+- **OmniFit**: Multi-modal 3D Body Fitting via Scale-agnostic Dense Landmark Prediction [arXiv](https://arxiv.org/abs/2604.21575) [Project](https://zcai0612.github.io/OmniFit/) [Code](https://github.com/zcai0612/OmniFit) [DOI](https://doi.org/10.1007/978-3-032-36969-7_24)
+
+**ICLR**
+
+- **Human3R**: Everyone Everywhere All at Once [arXiv](https://arxiv.org/abs/2510.06219) [Project](https://fanegg.github.io/Human3R/) [Code](https://github.com/fanegg/Human3R) [OpenReview](https://openreview.net/forum?id=y7duXr0JXF)
+
+**SIGGRAPH Asia**
+
+- **DirtyMoCap**: Robust Motion Capture from Unconstrained Markers [arXiv](https://arxiv.org/abs/2609.19927) [Project](https://wanglongzju.github.io/DirtyMoCap-Project-Page) [Code](https://github.com/WangLongZJU/DirtyMoCap)
 
 **Journal papers**
 
