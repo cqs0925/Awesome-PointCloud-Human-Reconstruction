@@ -11,20 +11,24 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 
 ## Overview
 
-- [2026](#2026) — CVPR · ECCV · ICLR · SIGGRAPH Asia · Journal papers
-- [2025](#2025) — CVPR · ICCV · ICLR · WACV · BMVC · MM
+- [2026](#2026) — ICLR · CVPR · ECCV · SIGGRAPH Asia · Journal papers
+- [2025](#2025) — WACV · ICLR · CVPR · ICCV · MM · BMVC
 - [2024](#2024) — CVPR · ECCV
 - [2023](#2023) — CVPR · ICCV
 - [2022](#2022) — CVPR · ECCV
 - [2021](#2021) — CVPR · MM · arXiv papers
 - [2020](#2020) — CVPR · ECCV · NeurIPS
-- [2019](#2019) — CVPR · ICCV · ICRA · Journal papers
+- [2019](#2019) — ICRA · CVPR · ICCV · Journal papers
 
 **Links:** `[Paper]` official PDF / proceedings · `[arXiv]` preprint · `[Project]` project page · `[Code]` source · `[DOI]` publisher DOI · `[OpenReview]` venue forum
 
 ## Papers
 
 ### 2026
+
+**ICLR**
+
+- **Human3R**: Everyone Everywhere All at Once [arXiv](https://arxiv.org/abs/2510.06219) [Project](https://fanegg.github.io/Human3R/) [Code](https://github.com/fanegg/Human3R) [OpenReview](https://openreview.net/forum?id=y7duXr0JXF)
 
 **CVPR**
 
@@ -36,10 +40,6 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 - **ETCH-X**: Robustify Expressive Body Fitting to Clothed Humans with Composable Datasets [arXiv](https://arxiv.org/abs/2604.08548) [Project](https://xiaobenli00.github.io/ETCH-X) [Code](https://github.com/XiaobenLi00/ETCH-X)
 - **OmniFit**: Multi-modal 3D Body Fitting via Scale-agnostic Dense Landmark Prediction [arXiv](https://arxiv.org/abs/2604.21575) [Project](https://zcai0612.github.io/OmniFit/) [Code](https://github.com/zcai0612/OmniFit) [DOI](https://doi.org/10.1007/978-3-032-36969-7_24)
 
-**ICLR**
-
-- **Human3R**: Everyone Everywhere All at Once [arXiv](https://arxiv.org/abs/2510.06219) [Project](https://fanegg.github.io/Human3R/) [Code](https://github.com/fanegg/Human3R) [OpenReview](https://openreview.net/forum?id=y7duXr0JXF)
-
 **SIGGRAPH Asia**
 
 - **DirtyMoCap**: Robust Motion Capture from Unconstrained Markers [arXiv](https://arxiv.org/abs/2609.19927) [Project](https://wanglongzju.github.io/DirtyMoCap-Project-Page) [Code](https://github.com/WangLongZJU/DirtyMoCap)
@@ -50,6 +50,14 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 
 ### 2025
 
+**WACV**
+
+- **PocoLoco**: A Point Cloud Diffusion Model of Human Shape in Loose Clothing [Paper](https://openaccess.thecvf.com/content/WACV2025/html/Seth_PocoLoco_A_Point_Cloud_Diffusion_Model_of_Human_Shape_in_WACV_2025_paper.html)
+
+**ICLR**
+
+- **OAR**: Occlusion-aware Non-Rigid Point Cloud Registration via Unsupervised Neural Deformation Correntropy [arXiv](https://arxiv.org/abs/2502.10704) [Code](https://github.com/zikai1/OAReg)
+
 **CVPR**
 
 - **Mamba4D**: Efficient 4D Point Cloud Video Understanding with Disentangled Spatial-Temporal State Space Models [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Liu_Mamba4D_Efficient_4D_Point_Cloud_Video_Understanding_with_Disentangled_Spatial-Temporal_CVPR_2025_paper.html) [arXiv](https://arxiv.org/abs/2405.14338)
@@ -59,21 +67,13 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 - **ETCH**: Generalizing Body Fitting to Clothed Humans via Equivariant Tightness (Highlight) [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Li_ETCH_Generalizing_Body_Fitting_to_Clothed_Humans_via_Equivariant_Tightness_ICCV_2025_paper.html) [Project](https://boqian-li.github.io/ETCH/)
 - **VoxelKP**: A Voxel-based Network Architecture for Human Keypoint Estimation in LiDAR Data [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Shi_VoxelKP_A_Voxel-based_Network_Architecture_for_Human_Keypoint_Estimation_in_ICCV_2025_paper.html)
 
-**ICLR**
+**MM**
 
-- **OAR**: Occlusion-aware Non-Rigid Point Cloud Registration via Unsupervised Neural Deformation Correntropy [arXiv](https://arxiv.org/abs/2502.10704) [Code](https://github.com/zikai1/OAReg)
-
-**WACV**
-
-- **PocoLoco**: A Point Cloud Diffusion Model of Human Shape in Loose Clothing [Paper](https://openaccess.thecvf.com/content/WACV2025/html/Seth_PocoLoco_A_Point_Cloud_Diffusion_Model_of_Human_Shape_in_WACV_2025_paper.html)
+- **SS-HMR**: Self-Supervised Human Mesh Recovery from Partial Point Cloud via a Self-Improving Loop [DOI](https://doi.org/10.1145/3746027.3755570)
 
 **BMVC**
 
 - **DepthHMR**: Leveraging Depth Around Humans for Multi-Human Mesh Generation [Paper](https://bmvc2025.bmva.org/proceedings/328/)
-
-**MM**
-
-- **SS-HMR**: Self-Supervised Human Mesh Recovery from Partial Point Cloud via a Self-Improving Loop [DOI](https://doi.org/10.1145/3746027.3755570)
 
 ### 2024
 
@@ -140,6 +140,10 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 
 ### 2019
 
+**ICRA**
+
+- **FastDepth**: Fast Monocular Depth Estimation on Embedded Systems [arXiv](https://arxiv.org/abs/1903.03273)
+
 **CVPR**
 
 - **LBS Autoencoder**: Self-supervised Fitting of Articulated Meshes to Point Clouds [Paper](https://openaccess.thecvf.com/content_CVPR_2019/html/Li_LBS_Autoencoder_Self-Supervised_Fitting_of_Articulated_Meshes_to_Point_Clouds_CVPR_2019_paper.html)
@@ -147,10 +151,6 @@ This is a curated list of methods for deriving 3D humans from point clouds, incl
 **ICCV**
 
 - **Skeleton-Aware 3D Human Shape Reconstruction From Point Clouds** [Paper](https://openaccess.thecvf.com/content_ICCV_2019/html/Jiang_Skeleton-Aware_3D_Human_Shape_Reconstruction_From_Point_Clouds_ICCV_2019_paper.html)
-
-**ICRA**
-
-- **FastDepth**: Fast Monocular Depth Estimation on Embedded Systems [arXiv](https://arxiv.org/abs/1903.03273)
 
 **Journal papers**
 
