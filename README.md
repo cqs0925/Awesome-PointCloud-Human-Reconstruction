@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="From points to people: point-cloud, mesh, and pose representations of the human body" width="100%">
-</p>
-
 <h1 align="center">Awesome Point Cloud Human Reconstruction</h1>
 
 <p align="center">
