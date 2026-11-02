@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <strong>60 papers</strong> &nbsp;·&nbsp; 42 Core / 18 Related &nbsp;·&nbsp; 2019–2026
+  <strong>65 papers</strong> &nbsp;·&nbsp; 47 Core / 18 Related &nbsp;·&nbsp; 2019–2026
 </p>
 
 <p align="center">
@@ -51,12 +51,13 @@ Human joint and keypoint estimation.
 
 <a id="task-shape-mesh"></a>
 <details>
-<summary><strong>Shape & mesh</strong> · 13 papers</summary>
+<summary><strong>Shape & mesh</strong> · 14 papers</summary>
 
 Human mesh recovery, surface modeling, and point-cloud shape generation.
 
 - [SynHMR (2026)](#paper-synhmr)
 - [PointHPS (2026)](#paper-pointhps)
+- [mmWaveFlow (2026)](#paper-mmwaveflow)
 - [PocoLoco (2025)](#paper-pocoloco)
 - [SS-HMR (2025)](#paper-ss-hmr)
 - [LiDAR-HMR (2025)](#paper-lidar-hmr)
@@ -91,7 +92,7 @@ Human-template registration and body-model fitting to 3D observations.
 
 <a id="task-motion-capture"></a>
 <details>
-<summary><strong>Motion capture</strong> · 13 papers</summary>
+<summary><strong>Motion capture</strong> · 14 papers</summary>
 
 Temporal human motion recovery from LiDAR, fused observations, or optical-marker point sets.
 
@@ -99,6 +100,7 @@ Temporal human motion recovery from LiDAR, fused observations, or optical-marker
 - [OptimalCap (2026)](#paper-optimalcap)
 - [LiDAR-FMC (2026)](#paper-lidar-fmc)
 - [Sparkle (2026)](#paper-sparkle)
+- [BMLiCap (2026)](#paper-bmlicap)
 - [FreeCap (2025)](#paper-freecap)
 - [OpenMoCap (2025)](#paper-openmocap)
 - [DAMO (2025)](#paper-damo)
@@ -113,12 +115,15 @@ Temporal human motion recovery from LiDAR, fused observations, or optical-marker
 
 <a id="task-datasets-benchmarks"></a>
 <details>
-<summary><strong>Datasets & benchmarks</strong> · 2 papers</summary>
+<summary><strong>Datasets & benchmarks</strong> · 5 papers</summary>
 
 Human datasets and evaluation benchmarks.
 
 - [M4Human (2026)](#paper-m4human)
+- [4D-DRESS (2024)](#paper-4d-dress)
 - [SLOPER4D (2023)](#paper-sloper4d)
+- [MM-Fi (2023)](#paper-mm-fi)
+- [mmBody (2022)](#paper-mmbody)
 
 </details>
 
@@ -156,11 +161,11 @@ Human datasets and evaluation benchmarks.
 
 | Year | Papers | Venues |
 | :--- | ---: | :--- |
-| [**2026**](#2026) | 14 | [AAAI](#2026-aaai) · [ICLR](#2026-iclr) · [CVPR](#2026-cvpr) · [ECCV](#2026-eccv) · [GCPR](#2026-gcpr) · [SIGGRAPH Asia](#2026-siggraph-asia) · [Journals](#2026-journal-papers) |
+| [**2026**](#2026) | 16 | [AAAI](#2026-aaai) · [ICLR](#2026-iclr) · [CVPR](#2026-cvpr) · [ECCV](#2026-eccv) · [GCPR](#2026-gcpr) · [SIGGRAPH Asia](#2026-siggraph-asia) · [Journals](#2026-journal-papers) |
 | [**2025**](#2025) | 14 | [WACV](#2025-wacv) · [AAAI](#2025-aaai) · [ICLR](#2025-iclr) · [CVPR](#2025-cvpr) · [ICCV](#2025-iccv) · [MM](#2025-mm) · [BMVC](#2025-bmvc) · [Journals](#2025-journal-papers) |
-| [**2024**](#2024) | 7 | [AAAI](#2024-aaai) · [CVPR](#2024-cvpr) · [ECCV](#2024-eccv) · [NeurIPS](#2024-neurips) · [SIGGRAPH Asia](#2024-siggraph-asia) |
-| [**2023**](#2023) | 7 | [CVPR](#2023-cvpr) · [ICCV](#2023-iccv) · [SIGGRAPH Asia](#2023-siggraph-asia) · [arXiv](#2023-arxiv-papers) |
-| [**2022**](#2022) | 5 | [ICLR](#2022-iclr) · [CVPR](#2022-cvpr) · [SIGGRAPH](#2022-siggraph) · [ECCV](#2022-eccv) |
+| [**2024**](#2024) | 8 | [AAAI](#2024-aaai) · [CVPR](#2024-cvpr) · [ECCV](#2024-eccv) · [NeurIPS](#2024-neurips) · [SIGGRAPH Asia](#2024-siggraph-asia) |
+| [**2023**](#2023) | 8 | [CVPR](#2023-cvpr) · [ICCV](#2023-iccv) · [NeurIPS](#2023-neurips) · [SIGGRAPH Asia](#2023-siggraph-asia) · [arXiv](#2023-arxiv-papers) |
+| [**2022**](#2022) | 6 | [ICLR](#2022-iclr) · [CVPR](#2022-cvpr) · [SIGGRAPH](#2022-siggraph) · [ECCV](#2022-eccv) · [MM](#2022-mm) |
 | [**2021**](#2021) | 4 | [CVPR](#2021-cvpr) · [ICCV](#2021-iccv) · [MM](#2021-mm) · [arXiv](#2021-arxiv-papers) |
 | [**2020**](#2020) | 5 | [CVPR](#2020-cvpr) · [ECCV](#2020-eccv) · [NeurIPS](#2020-neurips) |
 | [**2019**](#2019) | 4 | [ICRA](#2019-icra) · [CVPR](#2019-cvpr) · [ICCV](#2019-iccv) · [Journals](#2019-journal-papers) |
@@ -227,6 +232,12 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 - <a id="paper-unish"></a>**UniSH**: Unifying Scene and Human Reconstruction in a Feed-Forward Pass<br>
   `Related` · [RGB human reconstruction](#related-work) &nbsp;|&nbsp; ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Li_UniSH_Unifying_Scene_and_Human_Reconstruction_in_a_Feed-Forward_Pass_CVPR_2026_paper.html) · [Project](https://murphylmf.github.io/UniSH/)
+
+- <a id="paper-bmlicap"></a>**BMLiCap**: Bézier Degradation Modeling for LiDAR-based Human Motion Capture<br>
+  `Core` · [Motion capture](#task-motion-capture) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/An_Bezier_Degradation_Modeling_for_LiDAR-based_Human_Motion_Capture_CVPR_2026_paper.html) · [arXiv](https://arxiv.org/abs/2605.19620)
+
+- <a id="paper-mmwaveflow"></a>**mmWaveFlow**: Unified Enhancement and Generation of mmWave Human Point Clouds<br>
+  `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![Radar](https://img.shields.io/badge/Radar-ea580c?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Su_mmWaveFlow_Unified_Enhancement_and_Generation_of_mmWave_Human_Point_Clouds_CVPR_2026_paper.html) · [Code](https://github.com/suchang-99/mmWaveFlow)
 
 <a id="2026-eccv"></a>
 ### ECCV
@@ -360,6 +371,9 @@ Every entry carries its scope and primary task before the experimental data-sour
 - <a id="paper-livehps"></a>**LiveHPS**: LiDAR-based Scene-level Human Pose and Shape Estimation in Free Environment<br>
   `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) ![MoCap](https://img.shields.io/badge/MoCap-dc2626?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Ren_LiveHPS_LiDAR-based_Scene-level_Human_Pose_and_Shape_Estimation_in_Free_CVPR_2024_paper.html) · [arXiv](https://arxiv.org/abs/2402.17171) · [Code](https://github.com/4DVLab/LiveHPS)
 
+- <a id="paper-4d-dress"></a>**4D-DRESS**: A 4D Dataset of Real-World Human Clothing With Semantic Annotations<br>
+  `Core` · [Datasets & benchmarks](#task-datasets-benchmarks) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_4D-DRESS_A_4D_Dataset_of_Real-World_Human_Clothing_With_Semantic_CVPR_2024_paper.html) · [arXiv](https://arxiv.org/abs/2404.18630) · [Project](https://ait.ethz.ch/4d-dress) · [Code](https://github.com/eth-ait/4d-dress)
+
 <a id="2024-eccv"></a>
 ### ECCV
 
@@ -408,6 +422,12 @@ Every entry carries its scope and primary task before the experimental data-sour
 - <a id="paper-hmdiff"></a>**HMDiff**: Distribution-Aligned Diffusion for Human Mesh Recovery<br>
   `Related` · [RGB human reconstruction](#related-work) &nbsp;|&nbsp; ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Foo_Distribution-Aligned_Diffusion_for_Human_Mesh_Recovery_ICCV_2023_paper.html) · [arXiv](https://arxiv.org/abs/2308.13369) · [Project](https://gongjia0208.github.io/HMDiff/)
 
+<a id="2023-neurips"></a>
+### NeurIPS
+
+- <a id="paper-mm-fi"></a>**MM-Fi**: Multi-Modal Non-Intrusive 4D Human Dataset for Versatile Wireless Sensing (Datasets and Benchmarks Track)<br>
+  `Core` · [Datasets & benchmarks](#task-datasets-benchmarks) &nbsp;|&nbsp; ![Radar](https://img.shields.io/badge/Radar-ea580c?style=flat-square) ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/3baf7a39d07e9f4f1e258a412df94521-Abstract-Datasets_and_Benchmarks.html) · [arXiv](https://arxiv.org/abs/2305.10345) · [Project](https://ntu-aiot-lab.github.io/mm-fi) · [Code](https://github.com/ybhbingo/MMFi_dataset)
+
 <a id="2023-siggraph-asia"></a>
 ### SIGGRAPH Asia
 
@@ -452,6 +472,12 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 - <a id="paper-lvd"></a>**LVD**: Learned Vertex Descent: A New Direction for 3D Human Model Fitting<br>
   `Core` · [Registration & fitting](#task-registration-fitting) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2205.06254) · [Project](https://enriccorona.github.io/lvd/) · [Code](https://github.com/enriccorona/LVD) · [DOI](https://doi.org/10.1007/978-3-031-20086-1_9)
+
+<a id="2022-mm"></a>
+### MM
+
+- <a id="paper-mmbody"></a>**mmBody**: mmBody Benchmark: 3D Body Reconstruction Dataset and Analysis for Millimeter Wave Radar<br>
+  `Core` · [Datasets & benchmarks](#task-datasets-benchmarks) &nbsp;|&nbsp; ![Radar](https://img.shields.io/badge/Radar-ea580c?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2209.05070) · [Code](https://github.com/Chen3110/mmBody) · [DOI](https://doi.org/10.1145/3503161.3548262)
 
 <p align="right"><a href="#overview">↑ Back to overview</a></p>
 
