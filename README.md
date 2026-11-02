@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <strong>47 papers</strong> &nbsp;·&nbsp; 35 Core / 12 Related &nbsp;·&nbsp; 2019–2026
+  <strong>60 papers</strong> &nbsp;·&nbsp; 42 Core / 18 Related &nbsp;·&nbsp; 2019–2026
 </p>
 
 <p align="center">
@@ -37,19 +37,21 @@ Expand a category to jump to a paper. Each Core paper is indexed by its primary 
 <!-- Task index: update category membership and counts when adding or reclassifying a paper. -->
 <a id="task-pose-keypoints"></a>
 <details>
-<summary><strong>Pose & keypoints</strong> · 3 papers</summary>
+<summary><strong>Pose & keypoints</strong> · 5 papers</summary>
 
 Human joint and keypoint estimation.
 
 - [DenseCompletionHPE (2026)](#paper-densecompletionhpe)
 - [VoxelKP (2025)](#paper-voxelkp)
+- [DAPT (2025)](#paper-dapt)
+- [NeighborLiDARHPE (2024)](#paper-neighborlidarhpe)
 - [GC-KPL (2023)](#paper-gc-kpl)
 
 </details>
 
 <a id="task-shape-mesh"></a>
 <details>
-<summary><strong>Shape & mesh</strong> · 12 papers</summary>
+<summary><strong>Shape & mesh</strong> · 13 papers</summary>
 
 Human mesh recovery, surface modeling, and point-cloud shape generation.
 
@@ -64,21 +66,24 @@ Human mesh recovery, surface modeling, and point-cloud shape generation.
 - [SelfSupHMR (2021)](#paper-selfsuphmr)
 - [HPSE (2020)](#paper-hpse)
 - [IP-Net (2020)](#paper-ip-net)
+- [CAPE (2020)](#paper-cape)
 - [SkeletonAware (2019)](#paper-skeletonaware)
 
 </details>
 
 <a id="task-registration-fitting"></a>
 <details>
-<summary><strong>Registration & fitting</strong> · 7 papers</summary>
+<summary><strong>Registration & fitting</strong> · 9 papers</summary>
 
 Human-template registration and body-model fitting to 3D observations.
 
 - [ETCH-X (2026)](#paper-etch-x)
 - [OmniFit (2026)](#paper-omnifit)
+- [ODin (2026)](#paper-odin)
 - [ETCH (2025)](#paper-etch)
 - [NICP (2024)](#paper-nicp)
 - [ArtEq (2023)](#paper-arteq)
+- [LVD (2022)](#paper-lvd)
 - [LoopReg (2020)](#paper-loopreg)
 - [LBS-AE (2019)](#paper-lbs-ae)
 
@@ -86,16 +91,18 @@ Human-template registration and body-model fitting to 3D observations.
 
 <a id="task-motion-capture"></a>
 <details>
-<summary><strong>Motion capture</strong> · 11 papers</summary>
+<summary><strong>Motion capture</strong> · 13 papers</summary>
 
 Temporal human motion recovery from LiDAR, fused observations, or optical-marker point sets.
 
 - [DirtyMoCap (2026)](#paper-dirtymocap)
 - [OptimalCap (2026)](#paper-optimalcap)
 - [LiDAR-FMC (2026)](#paper-lidar-fmc)
+- [Sparkle (2026)](#paper-sparkle)
 - [FreeCap (2025)](#paper-freecap)
 - [OpenMoCap (2025)](#paper-openmocap)
 - [DAMO (2025)](#paper-damo)
+- [ReMP (2025)](#paper-remp)
 - [LiveHPS++ (2024)](#paper-livehps-plus-plus)
 - [RoMo (2024)](#paper-romo)
 - [LocalMoCap (2023)](#paper-localmocap)
@@ -117,11 +124,11 @@ Human datasets and evaluation benchmarks.
 
 <a id="related-work"></a>
 <details>
-<summary><strong>Related work</strong> · 12 papers</summary>
+<summary><strong>Related work</strong> · 18 papers</summary>
 
 **RGB human reconstruction.** Human reconstruction methods that use RGB images or video; internally estimated depth or point clouds do not make their inputs measured 3D observations.
 
-[Human3R (2026)](#paper-human3r) · [UniSH (2026)](#paper-unish) · [DepthHMR (2025)](#paper-depthhmr) · [VisDB (2022)](#paper-visdb)
+[Human3R (2026)](#paper-human3r) · [UniSH (2026)](#paper-unish) · [DepthHMR (2025)](#paper-depthhmr) · [MHCDiff (2024)](#paper-mhcdiff) · [HMDiff (2023)](#paper-hmdiff) · [VisDB (2022)](#paper-visdb)
 
 **General point-cloud models.** General spatial or temporal point-cloud feature models that can inform human-specific methods.
 
@@ -135,19 +142,27 @@ Human datasets and evaluation benchmarks.
 
 [MultiHumanNVS (2022)](#paper-multihumannvs) · [FastDepth (2019)](#paper-fastdepth)
 
+**General shape completion.** General point-cloud or 3D shape completion methods, relevant to completing partial human scans.
+
+[BridgeShape (2026)](#paper-bridgeshape) · [PDR (2022)](#paper-pdr)
+
+**Non-human diffusion & bridge models.** Diffusion / Schrödinger-bridge methods outside point clouds and humans (image denoising, speech), kept for their generative-modelling techniques.
+
+[RNSD (2025)](#paper-rnsd) · [Bridge-TTS (2023)](#paper-bridgetts)
+
 </details>
 
 ## Overview
 
 | Year | Papers | Venues |
 | :--- | ---: | :--- |
-| [**2026**](#2026) | 11 | [ICLR](#2026-iclr) · [CVPR](#2026-cvpr) · [ECCV](#2026-eccv) · [SIGGRAPH Asia](#2026-siggraph-asia) · [Journals](#2026-journal-papers) |
-| [**2025**](#2025) | 11 | [WACV](#2025-wacv) · [AAAI](#2025-aaai) · [ICLR](#2025-iclr) · [CVPR](#2025-cvpr) · [ICCV](#2025-iccv) · [MM](#2025-mm) · [BMVC](#2025-bmvc) · [Journals](#2025-journal-papers) |
-| [**2024**](#2024) | 5 | [CVPR](#2024-cvpr) · [ECCV](#2024-eccv) · [SIGGRAPH Asia](#2024-siggraph-asia) |
-| [**2023**](#2023) | 5 | [CVPR](#2023-cvpr) · [ICCV](#2023-iccv) · [SIGGRAPH Asia](#2023-siggraph-asia) |
-| [**2022**](#2022) | 3 | [CVPR](#2022-cvpr) · [SIGGRAPH](#2022-siggraph) · [ECCV](#2022-eccv) |
+| [**2026**](#2026) | 14 | [AAAI](#2026-aaai) · [ICLR](#2026-iclr) · [CVPR](#2026-cvpr) · [ECCV](#2026-eccv) · [GCPR](#2026-gcpr) · [SIGGRAPH Asia](#2026-siggraph-asia) · [Journals](#2026-journal-papers) |
+| [**2025**](#2025) | 14 | [WACV](#2025-wacv) · [AAAI](#2025-aaai) · [ICLR](#2025-iclr) · [CVPR](#2025-cvpr) · [ICCV](#2025-iccv) · [MM](#2025-mm) · [BMVC](#2025-bmvc) · [Journals](#2025-journal-papers) |
+| [**2024**](#2024) | 7 | [AAAI](#2024-aaai) · [CVPR](#2024-cvpr) · [ECCV](#2024-eccv) · [NeurIPS](#2024-neurips) · [SIGGRAPH Asia](#2024-siggraph-asia) |
+| [**2023**](#2023) | 7 | [CVPR](#2023-cvpr) · [ICCV](#2023-iccv) · [SIGGRAPH Asia](#2023-siggraph-asia) · [arXiv](#2023-arxiv-papers) |
+| [**2022**](#2022) | 5 | [ICLR](#2022-iclr) · [CVPR](#2022-cvpr) · [SIGGRAPH](#2022-siggraph) · [ECCV](#2022-eccv) |
 | [**2021**](#2021) | 4 | [CVPR](#2021-cvpr) · [ICCV](#2021-iccv) · [MM](#2021-mm) · [arXiv](#2021-arxiv-papers) |
-| [**2020**](#2020) | 4 | [CVPR](#2020-cvpr) · [ECCV](#2020-eccv) · [NeurIPS](#2020-neurips) |
+| [**2020**](#2020) | 5 | [CVPR](#2020-cvpr) · [ECCV](#2020-eccv) · [NeurIPS](#2020-neurips) |
 | [**2019**](#2019) | 4 | [ICRA](#2019-icra) · [CVPR](#2019-cvpr) · [ICCV](#2019-iccv) · [Journals](#2019-journal-papers) |
 
 ## Reading the tags
@@ -175,6 +190,7 @@ For example, [FastDepth](#paper-fastdepth) predicts depth from RGB, while its de
 | ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) | Simulated or rendered data (e.g., SURREAL, NoiseMotion, BEDLAM, ModelNet/ShapeNet CAD, simulated garments) |
 | ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) | RGB imagery used in experiments, including image/video inputs or visual cues; the badge alone does not imply RGB-only inference |
 | ![Unverified](https://img.shields.io/badge/Unverified-64748b?style=flat-square) | Source could not be verified from the paper |
+| ![N/A](https://img.shields.io/badge/N%2FA-9e9e9e?style=flat-square) | Not a point-cloud / human method; included as a related work |
 
 </details>
 
@@ -188,11 +204,20 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 ## 2026
 
+<a id="2026-aaai"></a>
+### AAAI
+
+- <a id="paper-bridgeshape"></a>**BridgeShape**: Latent Diffusion Schrödinger Bridge for 3D Shape Completion<br>
+  `Related` · [General shape completion](#related-work) &nbsp;|&nbsp; ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) &nbsp;·&nbsp; [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37493) · [arXiv](https://arxiv.org/abs/2506.23205) · [Code](https://github.com/kizzyk/BridgeShape)
+
 <a id="2026-iclr"></a>
 ### ICLR
 
 - <a id="paper-human3r"></a>**Human3R**: Everyone Everywhere All at Once<br>
   `Related` · [RGB human reconstruction](#related-work) &nbsp;|&nbsp; ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2510.06219) · [Project](https://fanegg.github.io/Human3R/) · [Code](https://github.com/fanegg/Human3R) · [OpenReview](https://openreview.net/forum?id=y7duXr0JXF)
+
+- <a id="paper-sparkle"></a>**Sparkle**: A Robust and Versatile Representation for Point Cloud-based Human Motion Capture<br>
+  `Core` · [Motion capture](#task-motion-capture) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) &nbsp;·&nbsp; [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/file/e618724ac897c6cf3fbfb273f8695d67-Paper-Conference.pdf) · [OpenReview](https://openreview.net/forum?id=0blfYtdJES)
 
 <a id="2026-cvpr"></a>
 ### CVPR
@@ -214,6 +239,12 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 - <a id="paper-synhmr"></a>**SynHMR**: Synergistic Joint-Mesh Modeling for LiDAR-based Human Mesh Reconstruction<br>
   `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) &nbsp;·&nbsp; [Code](https://github.com/ShiRui1208/SynHMR) · [DOI](https://doi.org/10.1007/978-3-032-37314-4_21)
+
+<a id="2026-gcpr"></a>
+### GCPR
+
+- <a id="paper-odin"></a>**ODin**: Ordered Diffusion for 3D Human Registration<br>
+  `Core` · [Registration & fitting](#task-registration-fitting) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) ![MoCap](https://img.shields.io/badge/MoCap-dc2626?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2608.05804) · [Project](https://riccardomarin.github.io/odin/)
 
 <a id="2026-siggraph-asia"></a>
 ### SIGGRAPH Asia
@@ -248,11 +279,20 @@ Every entry carries its scope and primary task before the experimental data-sour
 - <a id="paper-pocoloco"></a>**PocoLoco**: A Point Cloud Diffusion Model of Human Shape in Loose Clothing<br>
   `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/WACV2025/html/Seth_PocoLoco_A_Point_Cloud_Diffusion_Model_of_Human_Shape_in_WACV_2025_paper.html)
 
+- <a id="paper-remp"></a>**ReMP**: Reusable Motion Prior for Multi-Domain 3D Human Pose Estimation and Motion Inbetweening<br>
+  `Core` · [Motion capture](#task-motion-capture) &nbsp;|&nbsp; ![MoCap](https://img.shields.io/badge/MoCap-dc2626?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/WACV2025/html/Jang_ReMP_Reusable_Motion_Prior_for_Multi-Domain_3D_Human_Pose_Estimation_WACV_2025_paper.html) · [arXiv](https://arxiv.org/abs/2411.09435) · [Project](https://hojunjang17.github.io/ReMP) · [Code](https://github.com/hojunJang17/ReMP)
+
 <a id="2025-aaai"></a>
 ### AAAI
 
 - <a id="paper-freecap"></a>**FreeCap**: Hybrid Calibration-Free Motion Capture in Open Environments<br>
   `Core` · [Motion capture](#task-motion-capture) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/32977) · [arXiv](https://arxiv.org/abs/2411.04469) · [DOI](https://doi.org/10.1609/aaai.v39i9.32977)
+
+- <a id="paper-dapt"></a>**DAPT**: Pre-Training a Density-Aware Pose Transformer for Robust LiDAR-based 3D Human Pose Estimation<br>
+  `Core` · [Pose & keypoints](#task-pose-keypoints) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) &nbsp;·&nbsp; [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/32169) · [arXiv](https://arxiv.org/abs/2412.13454) · [Code](https://github.com/AnxQ/dapt) · [DOI](https://doi.org/10.1609/aaai.v39i2.32169)
+
+- <a id="paper-rnsd"></a>**RNSD**: Realistic Noise Synthesis with Diffusion Models<br>
+  `Related` · [Non-human diffusion & bridge models](#related-work) &nbsp;|&nbsp; ![N/A](https://img.shields.io/badge/N%2FA-9e9e9e?style=flat-square) &nbsp;·&nbsp; [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/32910) · [arXiv](https://arxiv.org/abs/2305.14022) · [Code](https://github.com/wuqi-coder/RNSD) · [DOI](https://doi.org/10.1609/aaai.v39i8.32910)
 
 <a id="2025-iclr"></a>
 ### ICLR
@@ -305,6 +345,12 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 ## 2024
 
+<a id="2024-aaai"></a>
+### AAAI
+
+- <a id="paper-neighborlidarhpe"></a>**NeighborLiDARHPE**: Neighborhood-Enhanced 3D Human Pose Estimation with Monocular LiDAR in Long-Range Outdoor Scenes<br>
+  `Core` · [Pose & keypoints](#task-pose-keypoints) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) &nbsp;·&nbsp; [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/28545) · [Code](https://github.com/jingyi-zhang/Neighborhood-enhanced-LidarCap) · [DOI](https://doi.org/10.1609/aaai.v38i7.28545)
+
 <a id="2024-cvpr"></a>
 ### CVPR
 
@@ -322,6 +368,12 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 - <a id="paper-livehps-plus-plus"></a>**LiveHPS++**: Robust and Coherent Motion Capture in Dynamic Free Environment<br>
   `Core` · [Motion capture](#task-motion-capture) &nbsp;|&nbsp; ![LiDAR](https://img.shields.io/badge/LiDAR-2563eb?style=flat-square) ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) &nbsp;·&nbsp; [Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04179.pdf) · [arXiv](https://arxiv.org/abs/2407.09833)
+
+<a id="2024-neurips"></a>
+### NeurIPS
+
+- <a id="paper-mhcdiff"></a>**MHCDiff**: Multi-hypotheses Conditioned Point Cloud Diffusion for 3D Human Reconstruction from Occluded Images<br>
+  `Related` · [RGB human reconstruction](#related-work) &nbsp;|&nbsp; ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) &nbsp;·&nbsp; [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/93a4fc360b66fd23d6276156ca69eb50-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2409.18364) · [Project](https://donghwankim0101.github.io/projects/mhcdiff/) · [Code](https://github.com/DonghwanKIM0101/MHCDIFF)
 
 <a id="2024-siggraph-asia"></a>
 ### SIGGRAPH Asia
@@ -353,17 +405,32 @@ Every entry carries its scope and primary task before the experimental data-sour
 - <a id="paper-nsf"></a>**NSF**: Neural Surface Fields for Human Modeling from Monocular Depth<br>
   `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Xue_NSF_Neural_Surface_Fields_for_Human_Modeling_from_Monocular_Depth_ICCV_2023_paper.html) · [Project](https://yuxuan-xue.com/nsf/)
 
+- <a id="paper-hmdiff"></a>**HMDiff**: Distribution-Aligned Diffusion for Human Mesh Recovery<br>
+  `Related` · [RGB human reconstruction](#related-work) &nbsp;|&nbsp; ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Foo_Distribution-Aligned_Diffusion_for_Human_Mesh_Recovery_ICCV_2023_paper.html) · [arXiv](https://arxiv.org/abs/2308.13369) · [Project](https://gongjia0208.github.io/HMDiff/)
+
 <a id="2023-siggraph-asia"></a>
 ### SIGGRAPH Asia
 
 - <a id="paper-localmocap"></a>**LocalMoCap**: A Locality-based Neural Solver for Optical Motion Capture<br>
   `Core` · [Motion capture](#task-motion-capture) &nbsp;|&nbsp; ![MoCap](https://img.shields.io/badge/MoCap-dc2626?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2309.00428) · [Code](https://github.com/non-void/LocalMoCap) · [DOI](https://doi.org/10.1145/3610548.3618148)
 
+<a id="2023-arxiv-papers"></a>
+### arXiv papers
+
+- <a id="paper-bridgetts"></a>**Bridge-TTS**: Schrodinger Bridges Beat Diffusion Models on Text-to-Speech Synthesis<br>
+  `Related` · [Non-human diffusion & bridge models](#related-work) &nbsp;|&nbsp; ![N/A](https://img.shields.io/badge/N%2FA-9e9e9e?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2312.03491) · [Project](https://bridge-tts.github.io/)
+
 <p align="right"><a href="#overview">↑ Back to overview</a></p>
 
 ---
 
 ## 2022
+
+<a id="2022-iclr"></a>
+### ICLR
+
+- <a id="paper-pdr"></a>**PDR**: A Conditional Point Diffusion-Refinement Paradigm for 3D Point Cloud Completion<br>
+  `Related` · [General shape completion](#related-work) &nbsp;|&nbsp; ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2112.03530) · [Code](https://github.com/ZhaoyangLyu/Point_Diffusion_Refinement) · [OpenReview](https://openreview.net/forum?id=wqD6TfbYkrn)
 
 <a id="2022-cvpr"></a>
 ### CVPR
@@ -382,6 +449,9 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 - <a id="paper-visdb"></a>**VisDB**: Learning Visibility for Robust Dense Human Body Estimation<br>
   `Related` · [RGB human reconstruction](#related-work) &nbsp;|&nbsp; ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2208.10652) · [Code](https://github.com/chhankyao/visdb)
+
+- <a id="paper-lvd"></a>**LVD**: Learned Vertex Descent: A New Direction for 3D Human Model Fitting<br>
+  `Core` · [Registration & fitting](#task-registration-fitting) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) ![RGB](https://img.shields.io/badge/RGB-0891b2?style=flat-square) &nbsp;·&nbsp; [arXiv](https://arxiv.org/abs/2205.06254) · [Project](https://enriccorona.github.io/lvd/) · [Code](https://github.com/enriccorona/LVD) · [DOI](https://doi.org/10.1007/978-3-031-20086-1_9)
 
 <p align="right"><a href="#overview">↑ Back to overview</a></p>
 
@@ -427,6 +497,9 @@ Every entry carries its scope and primary task before the experimental data-sour
 
 - <a id="paper-hpse"></a>**HPSE**: Sequential 3D Human Pose and Shape Estimation from Point Clouds<br>
   `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![Synthetic](https://img.shields.io/badge/Synthetic-ca8a04?style=flat-square) ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) ![Depth](https://img.shields.io/badge/Depth-16a34a?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_Sequential_3D_Human_Pose_and_Shape_Estimation_From_Point_Clouds_CVPR_2020_paper.html)
+
+- <a id="paper-cape"></a>**CAPE**: Learning to Dress 3D People in Generative Clothing<br>
+  `Core` · [Shape & mesh](#task-shape-mesh) &nbsp;|&nbsp; ![Scan](https://img.shields.io/badge/Scan-7c3aed?style=flat-square) &nbsp;·&nbsp; [Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Ma_Learning_to_Dress_3D_People_in_Generative_Clothing_CVPR_2020_paper.html) · [arXiv](https://arxiv.org/abs/1907.13615) · [Project](https://cape.is.tue.mpg.de/) · [Code](https://github.com/qianlim/CAPE)
 
 <a id="2020-eccv"></a>
 ### ECCV
